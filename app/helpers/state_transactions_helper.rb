@@ -1,0 +1,2 @@
+module StateTransactionsHelper
+end

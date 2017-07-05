@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  street: MyString
+  city: MyString
+  zip: MyString
+  state: MyString
+  beds: 1
+  baths: 1
+  sq_feet: 1
+  prop_type: 1
+  sale_date: 2017-07-05 22:18:42
+  price: 9.99
+  latitude: 9.99
+  longitude: 9.99
+
+two:
+  street: MyString
+  city: MyString
+  zip: MyString
+  state: MyString
+  beds: 1
+  baths: 1
+  sq_feet: 1
+  prop_type: 1
+  sale_date: 2017-07-05 22:18:42
+  price: 9.99
+  latitude: 9.99
+  longitude: 9.99

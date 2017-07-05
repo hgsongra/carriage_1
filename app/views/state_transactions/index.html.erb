@@ -1,0 +1,8 @@
+  <p id="notice"><%= notice %></p>
+
+  <h1>State Transactions</h1>
+
+ <%= form_tag import_state_transactions_path, multipart: true do %>
+  <%= file_field_tag :file, required: true %>
+  <%= submit_tag "Import Record" %>
+<% end %>
