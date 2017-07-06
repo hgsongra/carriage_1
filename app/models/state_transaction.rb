@@ -21,6 +21,14 @@ class StateTransaction < ApplicationRecord
 		end
 	end
 
+
+	def self.filter(parameters)
+		result = all
+		result = where(prop_type: parameters[:type]) if parameters[:type].present?
+		result = where(sq_feet: parameters[:sq_feet_min]..parameters[:sq_feet_max]) if parameters[:sq_feet_min].present? && parameters[:sq_feet_max]
+		result.page(parameters[:page]).per(parameters[:per_page])
+	end
+
 	private
 	
 	def self.transaction_params(data)

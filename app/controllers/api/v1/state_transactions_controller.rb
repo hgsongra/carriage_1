@@ -3,7 +3,7 @@ class Api::V1::StateTransactionsController < Api::V1::BaseController
 	before_action :set_state_transaction, only: [:update, :destroy]
 
 	def index
-		json_response(StateTransaction.all)
+		json_response(StateTransaction.filter(params))
 	end
 
 	def create
