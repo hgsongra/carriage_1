@@ -2,6 +2,8 @@ require 'csv'
 
 class StateTransaction < ApplicationRecord
 
+	# TODO: Validation code goes here
+
 	enum prop_type: %w{Residential Condo Multi-Family Unkown}
 
 	def self.import(file)
