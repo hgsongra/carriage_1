@@ -84,7 +84,7 @@ describe "StateTransaction API" do
     expect(JSON.parse(response.body)['street']).to eq('A-72') 
   end
 
-  it 'update state transaction' do
+  it 'delete state transaction' do
 		data = StateTransaction.create!(
 		    		street: "A-71", city: "Ahmedabad",
 			    	zip: "380015", state: "Gujarat",
